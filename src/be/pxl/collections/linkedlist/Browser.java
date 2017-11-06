@@ -7,8 +7,9 @@ public class Browser {
     private LinkedList<Page> forward = new LinkedList<>();
     private Page currentPage;
 
-    public void Browser() {
+    public Browser() {
         currentPage = new Page("www.google.be");
+        showCurrentPage();
     }
 
     public void visit(String url) {

@@ -37,10 +37,6 @@ public class Theatre {
 
     private Seat getSeatBySeatNumber(String seatNumber) {
         // implementeer het opzoeken van een stoel adhv een stoelnummer
-    	// hoelang duurt het om stoel A1 te zoeken
-    	// hoelang duurt het om de laatste stoel in het theater te zoeken
-    	// probeer dit eens uit het het hoofdprogramma
-    	// stel eventueel nog alternatieven voor
     }
 
 
