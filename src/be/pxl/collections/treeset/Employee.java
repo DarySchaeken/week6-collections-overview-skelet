@@ -17,4 +17,13 @@ public class Employee{
     public String toString() {
         return name + " " + salary;
     }
+    
+    public int compareto(Employee e){
+		if(this.getSalary() > e.getSalary()){
+			return 1;
+		} else if (this.getSalary() < e.getSalary()) {
+			return -1;
+		}
+		return 0;
+    }
 }
