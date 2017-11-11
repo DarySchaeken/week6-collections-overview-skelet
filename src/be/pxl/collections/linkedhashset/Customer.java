@@ -5,7 +5,11 @@ public class Customer {
     private int points;
     private int customerNumber;
 
-    public Customer(int customerNumber, String name) {
+    public String getName() {
+		return name;
+	}
+
+	public Customer(int customerNumber, String name) {
         this.name = name;
         this.customerNumber = customerNumber;
         points = 0;
@@ -23,4 +27,26 @@ public class Customer {
     public int getCustomerNumber() {
         return customerNumber;
     }
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + customerNumber;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Customer other = (Customer) obj;
+		if (customerNumber != other.customerNumber)
+			return false;
+		return true;
+	}
 }

@@ -15,6 +15,7 @@ public class BrowserUsage {
                 case "FWD": browser.forward(); break;
                 default: browser.visit(input);
             }
+            browser.showCurrentPage();
             System.out.println("Give url, BACK or FWD");
             input = scanner.nextLine();
         }
